@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHome"
+    android:padding="10dp"
+    android:background="#FF5722"
+    >
+
+    <FrameLayout
+        android:id="@+id/theMap"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="148dp"
+        android:layout_below="@+id/theMap"
+        android:layout_marginTop="-58dp"
+        android:background="@drawable/shape02"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/homeimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/house"
+            app:tint="#FF5722" />
+
+
+        <ImageView
+            android:id="@+id/searchimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/search"
+            app:tint="#FF5722" />
+
+        <ImageView
+            android:id="@+id/favimg"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/favourites"
+            app:tint="#FF5722" />
+
+        <ImageView
+            android:id="@+id/userimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:src="@drawable/person"
+            app:tint="#FF5722" />
+    </LinearLayout>
+
+
+</RelativeLayout>

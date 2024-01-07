@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559150659378",
+    "project_id": "birdmap-dcda9",
+    "storage_bucket": "birdmap-dcda9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559150659378:android:0e53ef1c0d317286ba092b",
+        "android_client_info": {
+          "package_name": "com.example.birdmap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBSqbf3zPshMNo-SemeUxo6llQYZ8xJK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

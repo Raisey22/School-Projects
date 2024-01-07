@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:padding="20dp"
+    android:background="#FF5722">
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape01"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/back"
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/headerimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/person"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/settingsimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/settings"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="50dp"
+
+        />
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/headerimg"
+        android:text="SETTINGS"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        />
+    <TextView
+        android:id="@+id/metriclabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:text="Preferred Metric System"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <Spinner
+        android:id="@+id/metricSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/metriclabel"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/edit_text"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/maxDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/metricSpinner"
+        android:text="Maximum Distance"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+
+    <Spinner
+        android:id="@+id/maxDistanceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maxDistance"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/edit_text"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@+id/maxDistanceSpinner"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:padding="15sp"
+        app:cornerRadius="8dp"
+        />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_below="@id/updatebtn"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:padding="15sp"
+        app:cornerRadius="8dp"
+        />
+
+
+</RelativeLayout>
